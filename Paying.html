@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <H1>SHOPPING</H1>
+    <p id="demo"></p> 
+    
+<script>
+    let price = 2500 ;
+    let discount = 0.9 ;
+    let total
+ if (price> 3000) {
+    total = `Total amount: ${(price * discount).toFixed(2)}` ;
+ }  else {
+     total = `Total amount: ${price}`;
+ }
+document.getElementById("demo").innerHTML = total ;
+</script>
+</body>
+</html>

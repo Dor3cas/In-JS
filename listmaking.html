@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <h1> JS in action</h1> 
+ <p id="me"></p>   
+ <p id="me"></p>
+ <script>
+  let header = "<h2>Languages that I have learnt</h2>";
+  let lang = ["js","php","c++"];
+  let html = `<h2>${header}</h2><ul>`;
+    for (let y of lang) {
+        html += `<li>${y}</li>` ;
+    }
+    html +=`<ul>` ;
+    document.getElementById("me").innerHTML = html ;
+ /*let text1 = "Hello" ;
+  let text2 = "World!" ;
+  let text3 = text1.concat ("",text2) ;
+  document.getElementById("me").innerHTML = text3*/
+ </script>
+</body>
+</html>
